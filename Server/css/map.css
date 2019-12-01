@@ -1,0 +1,97 @@
+#map{
+	width: 65%;
+	margin: 0;
+	padding-top: 18px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 8px;
+	margin-left: 15px;
+}
+#sub_map{
+	position: relative;
+	margin-bottom: 5px;
+}
+
+ #led_m1{		/* Box */
+	position: absolute;
+	width: 5%;
+	top: 40%;
+	left: 72%;
+ } 
+
+ #led_m2{		/* Sala */
+	position: absolute;
+	width: 5%;
+	top: 55%;
+	left: 43%;
+ } 
+
+#led_m3{		/* Stanza */
+	position: absolute;
+	width: 5%;
+	top: 55%;
+	left: 19%;
+}
+
+ #led_m4{
+	position: absolute;
+	width: 5%;
+	top: 12%;
+	left: 43%;
+ } 
+
+#led_m5{
+	position: absolute;
+	width: 5%;
+	top: 10%;
+	left: 21%;
+}
+
+#e1_led_6{
+	position: absolute;
+	width: 5%;
+	top: 10%;
+	left: 4%;
+}
+
+#e2_led_6{
+	position: absolute;
+	width: 5%;
+	top: 60%;
+	left: 4%;
+}
+
+#e3_led_6{
+	position: absolute;
+	width: 5%;
+	top: 10%;
+	left: 91%;
+}
+
+#e4_led_6{
+	position: absolute;
+	width: 5%;
+	top: 60%;
+	left: 91%;
+}
+
+#pir1{
+	position: absolute;
+	width: 5%;
+	top: 37%;
+	left: 43%;
+}
+
+#pir2{
+	position: absolute;
+	width: 5%;
+	top: 7%;
+	left: 73%;
+}
+
+#fan_m{
+	position: absolute;
+	width: 5%;
+	top: 8%;
+	left: 14%;
+}

@@ -1,0 +1,108 @@
+/* latin */
+@font-face {
+  font-family: 'Share Tech';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share Tech'), local('ShareTech-Regular'), url(../inc/font/sharetech.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.text-white{color: #fff}
+
+/* Specific Style */
+
+a:link, a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #4EA4FB;
+	text-decoration: none;
+}
+
+a.current{
+	color: #0066cc;
+	font-size: 18px;
+	width: 100%;
+}
+
+h1{
+	font-size: 3.8em;
+	line-height: 1em;
+	font-weight: 700;
+	color: #000;
+}
+
+h2{
+	font-size: 2em;
+	line-height: 1em;
+	font-weight: 400;
+	color: #000;
+}
+
+/* H1, H[n] Style for |FOOTER| */
+#footer h1, #footer h2, #footer h3, #web_log h3, #footer h4{
+    font-family: 'Share Tech'; 
+    margin: 5px 0px 10px 0px; 
+    font-weight: 600; 
+    color: #434242; 
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+#footer h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { 
+	text-decoration: underline; 
+}
+
+#footer h1 {font-size: 28px;}
+#footer h2 {font-size: 26px;}
+#footer h3,#web_log h3 {font-size: 24px;}
+#footer h4, .p_active {font-size: 22px;}
+
+.widget a:hover{
+	color: rgb(237, 69, 69) !important;
+	text-decoration: none;
+}
+/* |Dashboard| */
+/* H1, H[n] Style for  */
+.c_box h1, .c_box h2, .c_box h3, #p_title h3,.c_box h4, .p_active{
+    font-family: 'Share Tech'; 
+    margin: 5px 0px 3px 0px; 
+    font-weight: 600; 
+    color: #434242; 
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+.c_box h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { 
+	text-decoration: underline; 
+}
+
+.c_box h1 {font-size: 28px;}
+.c_box h2 {font-size: 26px;}
+.c_box h3, #p_title h3 {font-size: 24px;}
+.c_box h4 {font-size: 22px;}
+
+/* |LOGIN| */
+
+/* H1, H[n] Style for |LOGIN| */
+#web_log h3{
+    font-family: 'Share Tech'; 
+    margin: 5px 0px 15px 0px; 
+    font-weight: 600;
+    border-bottom: 2px solid #0066CC;
+    padding-bottom: 5px;
+    color: #0066CC; 
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+.error {
+	color: #FF0000;
+}
+
+.split h3{
+    color: #0066cc;
+  	margin-bottom: 0;
+}

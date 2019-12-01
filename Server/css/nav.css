@@ -1,0 +1,140 @@
+#navigation{
+	padding: 20px 0 !important;
+}
+.inav_alert{
+	height: 25px;
+	margin-left: 10px;
+}
+#container{
+	padding: 0;
+	background:rgb(4, 42, 49);
+	width: 100%;
+	position:relative;
+}
+
+.cont_nav{
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+}
+
+.box_nav_bar{
+	margin-right: 20px;
+	padding: 10px;
+}
+
+.flex-container {
+	padding: 0;
+	margin: 10px 0 0 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.flex-item {  
+	padding: 10px;
+	width: 31%;
+	height: 90px;
+	margin-top: 15px;
+	text-align: center;
+	background-color: rgba(55, 51, 51, 1);
+	border-radius: 9px;
+	box-shadow: inset 0px 0px 22px rgba(0, 0, 0, 0.47);
+	font-family: 'Share Tech';
+	margin: 5px 0px 3px 0px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: larger;
+}
+
+.flex-item2 {
+	padding: 10px;
+	width: 48%;
+	height: 90px;
+	margin-top: 15px;
+	text-align: center;
+	background-color: rgba(55, 51, 51, 1);
+	border-radius: 9px;
+	box-shadow: inset 0px 0px 22px rgba(0, 0, 0, 0.47);
+	font-family: 'Share Tech';
+	margin: 5px 0px 3px 0px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: larger;
+}
+.value_b0{
+	float: right;
+	margin-right: 25px !important;
+}
+
+#pro{
+	display: block;
+}
+
+#p_title{
+	margin-bottom: 10px;
+}
+
+#p_nav{
+	border-top: 40px solid rgb(32, 166, 171);
+	border-radius: 8px;
+	margin: 30px auto;
+	background: white;
+	min-width: 300px;
+	max-width: 600px;
+	padding: 10px 20px 20px 20px;
+}
+
+
+@media only screen and (max-width:850px){
+	#p_nav{
+		max-width: 100%;
+	}
+}
+#p_menu{
+	list-style: none;
+	font: 400 15px "PT Sans Narrow", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+#p_menu li{
+	margin-right: 15px;
+	display: inline-block;
+	padding: 0px 0 7px 0;
+	line-height: 17px;
+}
+#p_cont{
+	margin-top: 10px;
+	width: 100%;
+	color: rgb(110, 116, 121);
+}
+#p_menu a{
+	color: rgb(121, 131, 140);
+	font-weight: 600;
+}
+#p_menu a:hover{
+	color: rgb(67, 71, 74);
+}
+.p_active{
+	color: #3598DB;
+}
+
+.p_edit_r{
+	float:right;
+	color: rgb(4, 188, 195);
+}
+
+
+#footer{
+	position:fixed;
+	bottom:0;
+}

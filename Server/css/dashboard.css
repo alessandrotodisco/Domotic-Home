@@ -1,0 +1,141 @@
+#content{
+	width: 100%;
+	display:flex;
+	margin-bottom: 60px;
+	margin-top: 30px;
+}
+
+#wrapper{
+	padding: 0px;
+	width: 35%;
+}
+#wrapper > div, #wrapper > div:target ~ div:last-child {
+            display:none;
+}
+
+#wrapper > div:target,#wrapper > div:last-child{
+    display:block;
+}
+
+.cont_l{
+	display: flex;
+	align-items: center;
+}
+
+label{
+	width: 150px;
+}
+
+#wrapper > div{
+	padding: 15px 20px 25px 20px;
+}
+
+.scoll{
+	height:370px;
+	overflow-y:auto;
+}
+
+.c_box{
+	min-width: 300px;
+	margin: 0;
+	border-radius: 8px;
+	border-bottom: 2px solid rgb(107, 108, 112);
+	background: white;
+}
+
+.img_box{
+	width: 55px;
+	float: right;
+	margin-left: 10px;
+}
+
+@media only screen and (max-width:629px){
+	.c_box {
+		margin: 10px 0;
+	}
+}
+
+@media only screen and (max-width:915px){
+	/*
+	.img_box{
+		width: 45px !important;
+		float: right;
+	}
+	*/
+	
+	.set_fun{
+		float:right;
+	}
+
+	#content{
+		display:inline-block;
+	}
+	#footer{display: none;}
+
+	#wrapper{
+		padding: 0px;
+		display: flex;
+		flex-wrap:wrap;
+		width: 100%;
+	}
+
+	#wrapper > div {
+		flex-grow:2;
+		padding: 10px 15px 15px 15px;
+		width:30%;
+	}
+	#map{
+		display: none !important;
+	}
+}
+/*	Div color */
+#b1{border-top: 40px solid rgb(229, 189, 62);}
+
+#b2{border-top: 40px solid rgb(213, 43, 43);}
+
+#b3{border-top: 40px solid rgb(45, 94, 182);}
+
+#b4{border-top: 40px solid rgb(173, 213, 43);}
+
+#b0{border-top: 40px solid rgb(43, 128, 60);}
+
+.set_fun{
+	margin-top: 10px;
+	box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5);
+	border:1px solid white;
+	outline-color: rgba(31, 35, 37, 1);
+	padding:10px;
+	min-width: 70px;
+	color: white;
+	background: #24282B;
+}
+
+.set_fun:hover{
+	box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.8);
+}
+
+.turn{
+	margin-top: 5px;
+	width: 65px;
+}
+
+.turn:active, .turn:focus{
+	border: none;
+	outline: none;
+}
+
+button{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background-color: #b0e0e6;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

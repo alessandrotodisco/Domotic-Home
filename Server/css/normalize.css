@@ -1,0 +1,430 @@
+*, html, body {margin:0;padding:0;}
+
+html { height:		100%;}
+
+body { min-height:	100%;}
+
+
+html, body{font-size:100%;}
+
+html
+{
+-webkit-text-size-adjust:			100%;
+-ms-text-size-adjust:				100%;
+text-size-adjust:					100%;
+-webkit-tap-highlight-color:		rgba(0, 0, 0, 0);
+}
+
+
+
+@-webkit-viewport		{width:device-width}
+@-moz-viewport			{width:device-width}
+@-ms-viewport			{width:device-width}
+@-o-viewport			{width:device-width}
+@viewport				{width:device-width}
+
+
+body
+{
+-webkit-text-size-adjust:		100%;
+-ms-text-size-adjust:			100%;
+text-size-adjust:				100%;
+text-align:	left;
+}
+
+
+* 
+{
+-moz-box-sizing: 				border-box;
+-webkit-box-sizing: 			border-box;
+box-sizing: 					border-box;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block;}
+
+
+
+div.cl, div.cb, div.cr,hr.cl, hr.cb, hr.cr{height:0;border:none;}
+
+div.cl,  hr.cl{clear:left; margin-bottom:0;}
+
+div.cr, hr.cr{clear:right; margin-bottom:0;}
+
+div.cb, hr.cb{clear:both; margin-bottom:0;}
+
+* html div.cl, * html div.cb, * html div.cr,
+* html hr.cl, * html hr.cb, * html hr.cr
+{
+position:absolute; 
+visibility:hidden;
+}
+
+
+a {background: transparent;}
+
+a:focus {outline: thin dotted;}
+
+a:active,a:hover {outline: 0;}
+
+
+
+
+
+img, a img {border:0; background:none; margin:0; padding:0;}
+
+img{	vertical-align:middle;	}
+
+img {-ms-interpolation-mode: bicubic;}
+
+/* set image max width to 100% */
+img, .img-responsive
+{
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+
+.img-rounded	
+{
+-moz-border-radius: 		4px;
+-webkit-border-radius: 		4px;
+border-radius: 				4px;
+}
+
+
+.img-circle				
+{	
+-moz-border-radius: 		50%;
+-webkit-border-radius: 		50%;
+border-radius: 				50%;
+}
+
+audio,canvas,video 
+{
+    display: inline-block;
+}
+
+
+audio:not([controls]) 
+{
+    display: none;
+    height: 0;
+}
+
+
+
+[hidden],template { display: none;}
+
+
+abbr[title] ,  abbr[data-original-title]
+{
+cursor:			help;
+border-bottom:	1px dotted #999;
+}
+
+
+
+dfn 
+{
+font-style: 			italic;
+}
+
+
+hr 
+{
+-moz-box-sizing: 		content-box;
+box-sizing: 			content-box;
+height: 				0;
+}
+
+
+
+
+code,kbd,pre,samp, span.code, .code-inline
+{
+font-family:			monospace, sans-serif;
+font-size:				100%;
+font-family:			"panic sans",Monaco,monospace,sans-serif;
+}
+
+
+code, span.code, .code-inline
+{
+padding:				2px 4px;
+color:					#c7254e;
+background-color:		#f9f2f4;
+white-space:			nowrap;
+border-radius:			4px;
+}
+
+
+pre, div.code
+{
+padding:				1.5em 1.5em;
+margin-bottom:			1.5em;
+/*float:					left;*/
+width:					100%;
+
+-webkit-box-sizing:		border-box;
+-moz-box-sizing:		border-box;
+box-sizing:				border-box;
+
+color:					#676767;
+background:				#fafafa;
+
+white-space:			pre;
+white-space:			no-wrap;
+overflow-x:				scroll;
+
+_white-space:			normal !important;
+-webkit-box-shadow:		0 1px 4px #f1f0f0,inset 0 0 0 1px #e7e6e5;
+-moz-box-shadow:		0 1px 4px #f1f0f0,inset 0 0 0 1px #e7e6e5;
+box-shadow:				0 1px 4px #f1f0f0,inset 0 0 0 1px #e7e6e5;
+}
+
+
+pre:hover, div.code:hover
+{
+background:				#fdfdfd;
+-webkit-box-shadow:		0 1px 4px #f1f0f0,inset 0 0 0 1px #cecdcb;
+-moz-box-shadow:		0 1px 4px #f1f0f0,inset 0 0 0 1px #cecdcb;
+box-shadow:				0 1px 4px #f1f0f0,inset 0 0 0 1px #cecdcb;
+}
+
+
+pre::-webkit-scrollbar,   div.code::-webkit-scrollbar
+{
+-webkit-appearance:		none;
+background-color:		transparent;
+width:					8px;
+height:					8px;
+}
+
+
+
+pre::-webkit-scrollbar-thumb, div.code::-webkit-scrollbar-thumb
+{
+border-radius:			0;
+background-color:		#d3d2d0;
+}
+
+
+pre code
+{
+padding:				2px 4px;
+color:					#c7254e;
+background-color:		#f9f2f4;
+font-size:				inherit;
+/*white-space:			nowrap;*/
+border-radius:			4px;
+}
+
+
+acronym 
+{			
+cursor:					help; 
+border-bottom:			1px dotted #00bdf2;
+}
+
+ 
+q 
+{
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+
+small,.small{font-size:85%;}
+
+
+@media screen and (max-width: 480px)
+{
+small,.small { font-size: 90%; } 
+}
+
+
+
+
+
+
+sub,	sup 
+{
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup 
+{
+    top: -0.5em;
+}
+
+sub 
+{
+    bottom: -0.25em;
+}
+
+cite{font-style:normal;}
+
+
+
+blockquote
+{
+padding:			10px 20px;
+margin:				0 0 20px;
+border-left:		5px solid #eee;
+}
+
+blockquote p
+{
+font-size:			1em;
+font-weight:		300;
+line-height:		1.25;
+}
+
+
+blockquote p:last-child
+{
+margin-bottom:0;
+}
+
+
+blockquote small, blockquote .small
+{
+display:			block;
+line-height:		1.428571429;
+color:				#999;
+}
+
+
+blockquote small:before,
+blockquote .small:before
+{
+content:'\2014 \00A0';
+}
+
+
+blockquote.pull-right
+{
+padding-right:				15px;
+padding-left:				0;
+border-right:				5px solid #eee;
+border-left:				0;
+}
+
+
+
+blockquote.pull-right p,
+blockquote.pull-right small,
+blockquote.pull-right .small
+{
+text-align:right;
+}
+
+blockquote.pull-right small:before,
+blockquote.pull-right .small:before{content:'';}
+
+blockquote.pull-right small:after,
+blockquote.pull-right .small:after
+{
+content:'\00A0 \2014';
+}
+
+blockquote:before,
+blockquote:after{content:"";}
+
+
+address
+{
+margin-bottom:			20px;
+font-style:				normal;
+line-height:			1.428571429;
+}
+
+
+svg:not(:root) 
+{
+ overflow: hidden;
+}
+
+
+
+figure {margin: 0;}
+
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+button,  html input[type="button"], input[type="reset"],  input[type="submit"]
+{
+-webkit-appearance:				button;
+cursor:							pointer;
+}
+   
+   
+button,input 
+{
+line-height: 			normal;
+}
+
+button, select 
+{
+text-transform: 		none;
+}
+
+
+button[disabled],  html input[disabled] 
+{
+    cursor: default;
+}
+
+
+input[type="checkbox"],	input[type="radio"] 
+{
+box-sizing: 				border-box; 
+padding: 					0; 
+}
+
+
+input[type="search"] 
+{
+-webkit-appearance: 			textfield; 
+-moz-box-sizing: 				content-box;
+-webkit-box-sizing: 			content-box; 
+box-sizing:						content-box;
+}
+
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration 
+{
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner 
+{
+    border: 0;
+    padding: 0;
+}
+
+
+
+textarea 
+{
+overflow: 				auto; 				
+vertical-align: 		top; 			
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+table 
+{
+    border-collapse: 		collapse;
+    border-spacing: 		0;
+	max-width:				100%;
+	border-spacing:			0;
+}
