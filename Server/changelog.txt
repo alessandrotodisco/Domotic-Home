@@ -1,0 +1,143 @@
+CHANGELOG v2.0
+
+LEGEND
+	?  Problems Identified
+	$? Big Problem to solve as soon as possible
+	!  Problem Solved
+	#  Things to implement
+
+! - Altervista doesn't recognise the inc.php page -> All the variable from label.php aren't used. (04/05-0001)
+! - Different Navigation bar dipending on the page that is considered. (04/05-0002)
+# - Improve Responsive layout for errors problem
+# - Import the font style for a better navigation in the site even in Off-line mode.
+# - Scroll to the top thanks to a button.
+
+CHANGELOG:
+02:
+	05: 
+		- Fixed the bug that affected the rendering of the page by Mozilla Firefox (Wasn't able to read the imported file because of the different use of the slash \ instead of /)
+		- Changed the layout of the normal menu and when resized.
+		- Solved the problem 0001.
+		- Implemented the Navigation Bar which changes depending on the page 0002.
+		- Implemented Responsive layout for errors problem
+	06:
+		-Footer: Fixed problem for Responsive layout, changed the class split2 -> split. Added widget contact and social icon in the 3° box. Implemented graphics. 
+	09:
+		-Changed the year in the footer (We're in 2030).
+	11:
+		-Created the app folder for the Domotic Home Project and merged the previous work into v2.
+		-Changed and standardized the variables and pages (footer, header, label, htaccess, error page).
+		-Created the structure of the page: Dashboard. Unique header and footer that change dinamically. New class cont_nav for the left/right margin, used in the footer, header and for limit the width dashboard.
+	12:
+		-Problem in the header (DASHBOARD) due to a normalize.css setings. Solved
+		-Seen how to "Login, use of Session and level of access" for users. Example in Project->Login
+	17:
+		-Standardized the Navigation Bar for all the page.
+		-Created Database for users and Login based on Session.
+		-Relative link for img
+	23:
+		-Fixed header bug for media resizing.
+		-Header bug in homepage in menu.
+	25:
+		-Fixed Header bug in homepage
+		-Auto create database, table and admin in sql.
+	26:
+		-Font Share Tech (used for h1, h2, etc) saved for offline mode.
+		-Login button now have a better grafic (box-shadows - css).
+	27:
+		Design
+			New Dashboard, colorfull Box (display flex, from 1 to 3 box for each row).
+				-->	Standard box, title, image and text.
+			Restyling login. Fixed the position of the elements and little changes about the color. 
+			(added hr)
+			New css file named "font" for grouping all the font configuration.
+			New css file named "scrollbar" for the scrollbar configuration.
+		Next implementation: 
+			-php serial for interfacing with Raspberry Pi.
+			-Try the communication between Raspberry Pi and Arduino trought Serial and Php.
+			-Javascript and Ajax for keep updating data?
+03/05: (Design) Javascript associated with button in dashboard, now change the img src for simulating the status of the system.
+
+x/03: Nope, in travel with school
+
+x/04/05: 
+	Implemented ajax, and json for continue streaming of the data and istant refresh on the map w/o the need to refresh the page. 
+	Asincronous refresh. Javascript, used for update the status of the image.
+	Complete new set of image, redesigned.
+	Introduced a new bar in general thats allows a general view of the boxes.
+	New button that switch on (green) /off (red)
+	Javascript to control the output/input
+
+04/06: 
+	Predisposition for language switch (ING/ITA). Created store page variables. Converted all the text into dinamic vaiable.
+
+05/06:
+	Introduced Profile section:
+	Update Nickname, Password and Site Language.
+	You can now add and remove accounts.
+	Cookie, now all the website support language switch.
+	Total New Menu, now it's flex and still responsable for mobile screen.	
+06/06
+	Fixed Flex Menu
+	Fixed and cleaned css from all the old items
+	Fixed responsive box, now it all have the same margin
+	Improved JS -> Click on menu responsive now it disappear
+	New favicon
+	Fixed Inferface when not connected, now all the button/image become dull and than it return working.
+10/06
+	Bought the wood and screws and others things for the plastic and started building the base.
+11/06
+ |	The parameters list (the order, the meaning and the usage) has been set
+ |	Change of all the local variable in js.
+ |
+[../..]
+	Built the 5 rooms with walls, connected all the wires. Fixed a bounch of problem.
+	New communication
+
+ V
+26/06
+	The plastic is finished
+	Need external alimentation for other source (such as the Computer alimentation) 5v to arduino and raspberry.
+TO DO:
+	[X] Gestire il flussso assente di dati
+	[-] Segnalare quando non riceve più dati visivamente
+	[-] E-Mail
+
+
+Arduino Out
+lights(5in-1out)-alarm(s_alarm -x3mag-1pir- [1rfid-1rfid_old] )-irr(1pump-1igrometro)-control(s_fan-s_box-1temp-1humidity-1alchol)
+//////////////////////////////////////////////////////////////////////////////////////////////
+___________________________
+|   NAME  | Pin | Meaning |
+|---------|----------------
+|  led_1  |  43 | BOX     |
+|  led_2  |  42 | HALL    |
+|  led_3  |  41 | ROOM    |
+|  led_4  |  40 | BATH    |
+|  led_5  |  39 | KITCH   |
+|  led_6  |  38 | EXT     |
+|---------|---------------|
+|  alr_1  |  26 | MAGN_1  |
+|  alr_2  |  27 | MAGN_2  |
+|  alr_3  |  28 | MAGN_3  |
+|  alr_4  |  22 | PIR_1/2 |
+|---------|---------------|
+|  rfid_1 |53->49|COD_RFID|
+|  rfid_2 |  49 |OCOD_RFID|
+|---------|---------------|
+|  irr_1  |  37 | S_PUMP  |
+|  irr_2  |  A1 |  IGROM  |
+|---------|---------------|
+|  ctr_1  |  36 |   FAN   |
+|  ctr_2  |11->8|  S_BOX  |
+|  ctr_3  |  24 |   BUZZ  |
+|  ctr_3  |  27 | LED_ALR |
+|---------|---------------|
+|  sen_1  |     | FOTO_R  |
+|  sen_2  |  7  |  TEMP   |
+|  sen_3  |  7  |   HUM   |
+|  sen_4  | A0  |   GAS   |
+|-------------------------|
+| stepper motor |  11->8  |
+|_________________________|
+
